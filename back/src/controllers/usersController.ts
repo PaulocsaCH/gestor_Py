@@ -1,7 +1,7 @@
 import e, { Request, Response  } from "express";
-import { getAllUsersService, getUserByIdService, registerUserService } from "../services/usersService";
+import { getAllUsersService, userByIdService, registerUserService } from "../services/usersService";
 
-export const getUsers = async (req:Request, res: Response) => {
+export const allUsers = async (req:Request, res: Response) => {
     try {
         const users = await getAllUsersService()
         res.status(200).json(users)
@@ -11,10 +11,10 @@ export const getUsers = async (req:Request, res: Response) => {
     
 }
 
-export const getUserById = async (req:Request, res: Response) => {
+export const userById = async (req:Request, res: Response) => {
     const {id} = req.params
     try {
-        const byId = await getUserByIdService(Number(id))
+        const byId = await userByIdService(Number(id))
         res.status(200).json(byId)
     } catch (error) {
         res.status(404).json(error)

@@ -35,11 +35,11 @@ export const getAllUsersService = async () => {
     return users 
 }
 
-export const getUserByIdService = async (id:number) => {
-    const userById = users.find((user)=>{
+export const userByIdService = async (id:number) => {
+    const foundById = users.find((user)=>{
         return user.id===id
     })
-    return userById
+    return foundById
 }
 
 export const registerUserService = async (registerData: RegisterUserDto) => {

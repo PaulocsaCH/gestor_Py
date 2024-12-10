@@ -1,0 +1,8 @@
+RESPUESTAS HTTP
+
+200 ---> "200 OK" Indica que la solicitud se realizo correctamente. El significado de un exito depende del metodo de solicitud HTPP
+            GET: Se ha obtenido el recurso y se transmite en el cuerpo del mensaje
+            POST: El recurso que describe el resultado de la accion se transmite en el cuerpo del mensaje
+
+404 ---> "404 Not Found" Indica que el servidor no puede encontrar el recurso solicitado (enlace roto, inactivo o perdida de enlace).
+            Solo indica que el recurso esta ausente, NO si la ausencia es temporal o permanente.

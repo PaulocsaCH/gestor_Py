@@ -1,4 +1,9 @@
-const saludo = "Hola"
-const nombre = "Gonzalo"
+//? INICIALIZA EL SERVIDOR
 
-console.log(saludo, "me llamo" , nombre);
+import server from "./server";
+
+server.listen(3000,()=>{
+    console.log(`Server listining on PORT ${3000}`);
+    
+})
+

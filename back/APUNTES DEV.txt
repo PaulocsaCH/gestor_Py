@@ -1,21 +1,3 @@
-ATAJOS MAC:
-    Explorador ---> Cmd + B
-    Moverse entre archivos ---> Cmp + P o Control + TAB
-    Mover una lineas de codigo hacia arriba o hacia abajo ---> Option
-    Terminal --> Cmd + J
-    Seleccionar varias coincidencia en el codigo ---> Cmd + A
-        Deshace la seleccion ---> Cmd + U
-    Duplicar linea seleccionada ---> Shift + Option + flecha hacia abajo 
-    Eliminar una linea ---> Shift + Cmd + K
-    Insertar una linea abajo ---> Cmd + entre
-        Insertar una linea arriba ---> flecha arriba + Cmd + Enter
-    Comentar ---> Shift + Option + A 
-    Insertar cursor ---> Option + Cmd + flecha arriba o abajo
-    Indentar el texto ---> Option + Z
-    Informacion de parametros que recibe ---> Shift + Cma + Space
-    Comienzo y al final de la linea ---> Cmd + flecha L o flecha R   
-
-
 FRAMEWORK VS LIBRERIA(biblioteca):
 
     Libreria ---> Es un conjunto de funciones, clases o herramientas reutilizables que te ayudan a resolver problemas especificos
@@ -31,7 +13,5 @@ FRAMEWORK VS LIBRERIA(biblioteca):
 
     
 
-EXPRESS:
-    Es un framewokr de aplicacion web para Node.js el cual proporciona una serie de metodos y midderware que nos permiten crear
-    apliaciones de servidor
+
 

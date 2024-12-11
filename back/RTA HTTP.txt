@@ -1,8 +1,30 @@
-RESPUESTAS HTTP
+RESPUESTAS HTTP: Indican el resultado de una solicitud realizada por un cliente a un servidor web. Se clasifican en 5 categorias principales.
+
+1xx - RESPUESTAS INFORMATIVAS ---> Indican que la solicitud se recibio y el proceso continua.
+
+
+
+2xx - ÉXITO ---> La solicitud se completo con exito.
 
 200 ---> "200 OK" Indica que la solicitud se realizo correctamente. El significado de un exito depende del metodo de solicitud HTPP
             GET: Se ha obtenido el recurso y se transmite en el cuerpo del mensaje
             POST: El recurso que describe el resultado de la accion se transmite en el cuerpo del mensaje
 
+201 ---> "201 Created" Indica que una solicitud ha tenido exito y ha llevado a la creacion de un recurso. El caso de uso comun de este
+            codigo de estado es el resultado de una POST solicitud.
+
+204 ---> "204 No Content" Indica que una solicitud ha tenido exito, pero que el cliente no necesita salir de su pagina actual.
+            Ej: El cliente solicita eliminar un recurso y el servidor no necesita devolver datos.
+
+
+3xx - REDIRECCIONES ---> Indican que el cliente debe tomar mas acciones para completar la solicitud.
+
+
+
+4xx - ERRORES DE CLIENTE ---> Indican que hubo un problema con la solicitud del cliente.
+
 404 ---> "404 Not Found" Indica que el servidor no puede encontrar el recurso solicitado (enlace roto, inactivo o perdida de enlace).
             Solo indica que el recurso esta ausente, NO si la ausencia es temporal o permanente.
+
+
+5xx - ERRORES DEL SERVIDOR ---> Indican que hubo un problema en el servidor al procesar la solicitud.

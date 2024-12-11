@@ -1,3 +1,4 @@
+import { error } from "console"
 import RegisterAppointmentsDto from "../dto/RegisterAppointmentsDto"
 import IAppointments from "../Interfaces/IAppointments"
 
@@ -55,4 +56,15 @@ export const registerAppoinmentService = async (appointmentData:RegisterAppointm
     id++
 
     return newAppointment
+}
+
+export const cancelAppointmentService = async (id:number) => {
+    const foundAppointment = appointments.find((appointment)=>{
+        if(id === appointment.id) return appointment
+    })
+    if(!foundAppointment) throw error
+
+    foundAppointment.status= "cancelled"
+
+    return foundAppointment
 }

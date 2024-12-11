@@ -1,0 +1,23 @@
+DEV DEPENDENCIES: 
+
+    @types/express: Esencial si estamos trabajando con TS en un proyecto que usa Express. Esto es por que TS necesita definiciones
+    de tipos para las librerias JS, y @types/express proporciona precisamente eso. 
+        - Mejora autocumpletado, sugerencias automaticas para metodos y propiedades de Express
+        - Deteccion de errores, asegura que cualquier codigo que interactue con Express sea tipo seguro, evitando errores comunes.
+        - Mejora expreciencia con middlewares, aprovecha los tipos como como Request, Response, NextFunction
+
+    @types/node: Es crucial en proyectos TS que interactuan con Node.js, ya que proporciona las definiciones de tipos para funcionalidades
+    internas de Node.js, como el sistema de archivos, modulos, eventos, streams, entre otros.
+        - Acceso a tipos para Node.js, defina tipos para APIs nativas de Node.js(como fs, http, path)
+        - Prevencion de errores, detecta problemas relacionados con la falta de coincidencia de tipos al usar APIs de Node.js
+        - Compatibilidad con otras librerias, muchas dependencias de backend dependen de los tipos de Node.js para funcionar correctamente.
+
+    MORGAN: Ayuda a registrar las solicitudes HTTP entrantes, lo que es util para depurar y monitorear la actividad de tu aplicacion.
+
+
+
+
+DEPENDENCIES:
+
+    EXPRESS: Es un framewokr de aplicacion web para Node.js el cual proporciona una serie de metodos y midderware que nos permiten crear
+    apliaciones de servidor

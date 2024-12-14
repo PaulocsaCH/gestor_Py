@@ -31,11 +31,11 @@ const appointments: IAppointments[] = [
 
 let id: number = 4
 
-export const allAppointmentsService = async () => {
+export const allAppointmentsService = async (): Promise<IAppointments[]> => {
     return appointments
 }
 
-export const appointmentbyIdService = async (id:number) => {
+export const appointmentbyIdService = async (id:number): Promise<IAppointments|undefined> => {
     const foundById = await appointments.find((appointment)=>{
         return id === appointment.id
     })
@@ -43,7 +43,7 @@ export const appointmentbyIdService = async (id:number) => {
     return foundById
 }
 
-export const registerAppoinmentService = async (appointmentData:RegisterAppointmentsDto) => {
+export const registerAppoinmentService = async (appointmentData:RegisterAppointmentsDto): Promise<IAppointments> => {
     const newAppointment: IAppointments = {
         id,
         date: appointmentData.date,
@@ -58,7 +58,7 @@ export const registerAppoinmentService = async (appointmentData:RegisterAppointm
     return newAppointment
 }
 
-export const cancelAppointmentService = async (id:number) => {
+export const cancelAppointmentService = async (id:number): Promise<IAppointments> => {
     const foundAppointment = appointments.find((appointment)=>{
         if(id === appointment.id) return appointment
     })

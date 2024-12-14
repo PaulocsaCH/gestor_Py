@@ -14,6 +14,17 @@ DEV DEPENDENCIES:
 
     MORGAN: Ayuda a registrar las solicitudes HTTP entrantes, lo que es util para depurar y monitorear la actividad de tu aplicacion.
 
+    NODEMON: Es una dependencia muy util para proyectos de backend por que reinicia automaticamente tu servidor cada vez que detecta cambios
+    en los archivos. Esto mejora significativamente el flujo de desarrollo, ya que no tienes que reiniciar el servidor tras cada cambio.
+        - Mayor eficiencia, detecta automaticamente los cambios y reinicia el servidor.
+        - Configuracion sencilla, puedes personalizar los archivos que monitorea.
+        - Ideal para desarrollo, no se usa en produccion, lo que evita sobrecargar el servidor en entornos criticos.
+
+    TS-NODE: Es una herramienta clave en proyectos TS por que permite ejecutar archivos ".ts" directamente sin necesidad de compilarlos
+    previamente a "JS". Es ideal para desarrollo rapido y pruebas.
+        - Evita compilacion manual, puedes ejecutar tus archivos TS directamente.
+        - Desarrollo mas rapido, combina perfectamente con herramientas como nodemon.
+        - Ideal para scripts o pruebas, util para scripts rapidos o entornos donde no necesitas compilar todo el proyecto.
 
 
 
@@ -21,3 +32,22 @@ DEPENDENCIES:
 
     EXPRESS: Es un framewokr de aplicacion web para Node.js el cual proporciona una serie de metodos y midderware que nos permiten crear
     apliaciones de servidor
+
+
+    DOTENV: Es una herramienta esencial en cualquier proyecto de Node.js o TS para manejar configuraciones sensibles, como credenciales de BDD,
+    claves de API o configuraciones de entorno. Con dotenv, puedes guardar estas variables en un archivo ".env", manteniendolas fuera del codigo
+    fuente y facilitando la gestion de entorno de desarrollo, pruebas y produccion.
+        - Seguridad, evitas exponer configuraciones sensibles en el codigo.
+        - Facilidad de uso, permite cargar variables de entorno desde un archivo .env
+        - Flexibilidad, funciona tanto en desarrollo como en produccion (cuando es adecuado)
+        - Buena practica, ayuda a separar configuraciones especificas de cada entorno.
+
+    
+    TYPEORM: TypeORM es un ORM (Object-Relational-Mapping) para Node.Js que permite interactuar con bases de datos de forma mas sencilla
+    y estructurada usando TS o JS. Es ideal si buscas aprovechar las ventajas de TS, como la tipificacion estatica, para manejar BDD
+    relacionales (SQL) como PostgresSQL, MySQL, MariaDB, SQLite, entre otras.
+        - Compatibilidad con TS, soporte nativo para decoradores y tipos.
+        - Modelo basado en clases, define tus tablas y relaciones como clases.
+        - Transacciones y migraciones, facilita la creacion y manejo de esquemas de BDD.
+        - Soporte para multiples BDD, compatible con PostgresSQL, MySQL, SQLite, y mas.
+        - QueryBuilder, permite consultas personalizadas con una API fluida y flexible.

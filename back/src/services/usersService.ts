@@ -1,6 +1,7 @@
 import RegisterUserDto from "../dto/RegisterUserDto"
 import { createCredentialService } from "./credentialService"
 import IUser from "../Interfaces/IUser"
+import { error } from "console"
 
 const users: IUser[] = [
     {
@@ -31,18 +32,19 @@ const users: IUser[] = [
 
 let id: number = 4 
 
-export const getAllUsersService = async () => {
+export const getAllUsersService = async (): Promise <IUser[]> => {
     return users 
 }
 
-export const userByIdService = async (id:number) => {
+export const userByIdService = async (id:number): Promise<IUser|undefined> => {
     const foundById = users.find((user)=>{
-        return user.id===id
+        if (user.id === id) return user.id===id
+        else throw error
     })
     return foundById
 }
 
-export const registerUserService = async (registerData: RegisterUserDto) => {
+export const registerUserService = async (registerData: RegisterUserDto): Promise<IUser> => {
 
     const newCredential: number = await createCredentialService({
         username: registerData.username,

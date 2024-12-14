@@ -1,9 +1,12 @@
 //? INICIALIZA EL SERVIDOR
 
 import server from "./server";
+import { PORT } from "./config/envs";
+import "reflect-metadata"
+import { AppDataSource } from "./config/data-source";
 
-server.listen(3000,()=>{
-    console.log(`Server listining on PORT ${3000}`);
+server.listen(PORT,()=>{
+    console.log(`Server listining on PORT ${PORT}`);
     
 })
 

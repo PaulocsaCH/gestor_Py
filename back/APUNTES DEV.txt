@@ -12,6 +12,15 @@ FRAMEWORK VS LIBRERIA(biblioteca):
     EN UN FRAMEWORK "EL" CONTROLA EL FLUJO PRINCIPAL Y "TU" TRABAJAS DENTRO DE SU ESTRUCTURA.
 
     
+TYPESCRIPT:
 
+    Es un lenguaje de programacion que potencia las funcionalidades de JS y que nos permite definir tipado estatico, los cuales
+    nos ayudaran a reducir comportamientos inesperados en la ejecucion del codigo y que podemos prever en tiempos de compilacion.
+        Compilacion: Es el proceso por el cual se traducen las intrucciones escritas en un determinado lenguaje de programacion
+        a lenguaje de maquina.
+
+    TS CONFIG:
+                - "outDir" ---> Esta propiedad indica la carpeta de salida donde se va crear el codigo JS para ejecutar.
+                - "rootDir" ---> Especifica la carpeta raiz donde van a estar mis codigos fuentes.
 
 
